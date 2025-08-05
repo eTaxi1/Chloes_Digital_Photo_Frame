@@ -1,7 +1,10 @@
-import tkinter
+import tkinter as tk
 from App import App
 
-app = App()
 
 if __name__ == "__main__":
-    app.init()
+    root = tk.Tk()
+    app = App(root)
+    app.master.title("Chloes Gift")
+    app.master.minsize(500,500)
+    root.mainloop()
